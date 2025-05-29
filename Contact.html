@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FireFrameMedia - Contact & Booking</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: #ddd;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover, nav a.active {
+      color: #4db8ff;
+    }
+    main {
+      max-width: 900px;
+      margin: 50px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .contact-info, .contact-form {
+      flex: 1 1 400px;
+    }
+    h2 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+    .contact-info p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+    .contact-info img {
+      vertical-align: middle;
+      width: 24px;
+      margin-right: 10px;
+    }
+    .contact-info a {
+      color: #4db8ff;
+      text-decoration: none;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    input:focus, textarea:focus {
+      border-color: #4db8ff;
+      outline: none;
+    }
+    button {
+      background-color: #4db8ff;
+      color: white;
+      border: none;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3a99e0;
+    }
+    footer {
+      background-color: #222;
+      color: #ccc;
+      padding: 30px 40px;
+      margin-top: 50px;
+    }
+    footer a {
+      color: #4db8ff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>FireFrameMedia</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html" class="active">Contact & Booking</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Contact & Booking</h2>
+
+  <section class="contact-info">
+    <p><img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" /> <strong>Phone:</strong> 9294625866, 6266628050</p>
+    <p><img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" /> <strong>Email:</strong> <a href="mailto:fireframecreation@gmail.com">fireframecreation@gmail.com</a></p>
+    <p><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" /> <strong>Instagram:</strong> <a href="https://www.instagram.com/fireframe.studio/" target="_blank">@fireframe.studio</a></p>
+    <p>We’re here to help! Send us your project details and we’ll get in touch soon.</p>
+  </section>
+
+  <section class="contact-form">
+    <form action="https://formsubmit.co/fireframecreation@gmail.com" method="POST">
+      <!-- Anti-bot honeypot -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Contact / Booking Request">
+      <input type="hidden" name="_template" value="table">
+      
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" required placeholder="Your full name">
+
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+
+      <label for="phone">Phone Number *</label>
+      <input type="tel" id="phone" name="phone" required placeholder="Your contact number">
+
+      <label for="service">Select Service *</label>
+      <select id="service" name="service" required>
+        <option value="" disabled selected>Choose a service</option>
+        <option value="Video Editing">Video Editing</option>
+        <option value="Graphic Designing">Graphic Designing</option>
+        <option value="Animation">Animation</option>
+      </select>
+
+      <label for="details">Project Details *</label>
+      <textarea id="details" name="details" rows="5" placeholder="Tell us about your project..." required></textarea>
+
+      <button type="submit">Send Booking Request</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div>
+    <p><strong>Phone:</strong> 9294625866, 6266628050</p>
+    <p><strong>Email:</strong> <a href="mailto:fireframecreation@gmail.com">fireframecreation@gmail.com</a></p>
+    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/fireframe.studio/" target="_blank">@fireframe.studio</a></p>
+    <div class="copyright">© 2025 FireFrameMedia. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
